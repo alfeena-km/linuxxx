@@ -1,0 +1,184 @@
+mca@MCA:~/Desktop/linux$ man
+What manual page do you want?
+For example, try 'man man'.
+mca@MCA:~/Desktop/linux$ man cp
+mca@MCA:~/Desktop/linux$ man mkdir
+mca@MCA:~/Desktop/linux$ pwd
+/home/mca/Desktop/linux
+mca@MCA:~/Desktop/linux$ ls
+alfee  file1.txt  file2.txt  linuxxx  networklab  newfile.txt  nooha.txt
+mca@MCA:~/Desktop/linux$ echo "Welcome to Linux"
+Welcome to Linux
+mca@MCA:~/Desktop/linux$ echo -n  "Enter your name: " Alfeena
+mca@MCA:~/Desktop/linux$ echo "This is a sample text" > file2.txt
+mca@MCA:~/Desktop/linux$  read varname
+Alfeena
+mca@MCA:~/Desktop/linux$ echo $varname
+Alfeena
+mca@MCA:~/Desktop/linux$ read a b
+2 4
+mca@MCA:~/Desktop/linux$ echo $a
+2
+mca@MCA:~/Desktop/linux$ echo $b
+4
+mca@MCA:~/Desktop/linux$ echo $a $b
+2 4
+mca@MCA:~/Desktop/linux$ read -p "Enter your name: " na
+Enter your name: Alfeena
+mca@MCA:~/Desktop/linux$ echo "name: $na"
+name: Alfeena
+mca@MCA:~/Desktop/linux$ read na
+Alfeena
+mca@MCA:~/Desktop/linux$ $ echo name: $na
+$: command not found
+mca@MCA:~/Desktop/linux$ echo name: $na
+name: Alfeena
+mca@MCA:~/Desktop/linux$ read -n 5 code
+Alfeemca@MCA:~/Desktop/linux$  echo $code
+Alfee
+mca@MCA:~/Desktop/linux$ cat file1.txt
+Alfeena
+hello world
+haaii
+alfee
+mca@MCA:~/Desktop/linux$ cat > newfile.txt
+Hello world
+This is a new file
+mca@MCA:~/Desktop/linux$ cat file1.txt file2.txt
+Alfeena
+hello world
+haaii
+alfee
+This is a sample text
+mca@MCA:~/Desktop/linux$ cat >> file1.txt
+Ilahia collage of Engineering collage 
+department of mca
+secound semester 
+mca@MCA:~/Desktop/linux$ cat file1 file2
+cat: file1: No such file or directory
+cat: file2: No such file or directory
+mca@MCA:~/Desktop/linux$ cat file1.txt file2.txt
+Alfeena
+hello world
+haaii
+alfee
+Ilahia collage of Engineering collage 
+department of mca
+secound semester 
+This is a sample text
+mca@MCA:~/Desktop/linux$ cat -n file1.txt
+     1	Alfeena
+     2	hello world
+     3	haaii
+     4	alfee
+     5	Ilahia collage of Engineering collage 
+     6	department of mca
+     7	secound semester 
+mca@MCA:~/Desktop/linux$ cat -n file1.txt
+     1	Alfeena
+     2	hello world
+     3	haaii
+     4	alfee
+     5	Ilahia collage of Engineering collage 
+     6	department of mca
+     7	secound semester 
+mca@MCA:~/Desktop/linux$ cat -n file1.txt
+     1	Alfeena
+     2	hello world
+     3	haaii
+     4	alfee
+     5	Ilahia collage of Engineering collage 
+     6	department of mca
+     7	secound semester 
+mca@MCA:~/Desktop/linux$ more file1.txt
+Alfeena
+hello world
+haaii
+alfee
+Ilahia collage of Engineering collage 
+department of mca
+secound semester 
+mca@MCA:~/Desktop/linux$ more file1.txt file2.txt
+::::::::::::::
+file1.txt
+::::::::::::::
+Alfeena
+hello world
+haaii
+alfee
+Ilahia collage of Engineering collage 
+department of mca
+secound semester 
+mca@MCA:~/Desktop/linux$ more +4 file1.txt
+alfee
+Ilahia collage of Engineering collage 
+department of mca
+secound semester 
+mca@MCA:~/Desktop/linux$ less file1.txt
+mca@MCA:~/Desktop/linux$ less file1.txt file2.txt
+mca@MCA:~/Desktop/linux$ less +G file1.txt
+mca@MCA:~/Desktop/linux$ less +4 file.txt
+file.txt: No such file or directory
+mca@MCA:~/Desktop/linux$ less +4 file1.txt
+mca@MCA:~/Desktop/linux$ cd ..
+mca@MCA:~/Desktop$ mkdir linux
+mkdir: cannot create directory ‘linux’: File exists
+mca@MCA:~/Desktop$ cd linux
+mca@MCA:~/Desktop/linux$ mkdir skm
+mca@MCA:~/Desktop/linux$ cd skm
+mca@MCA:~/Desktop/linux/skm$ ^C
+mca@MCA:~/Desktop/linux/skm$ cd ..
+mca@MCA:~/Desktop/linux$ mkdir skm
+mkdir: cannot create directory ‘skm’: File exists
+mca@MCA:~/Desktop/linux$ mkdir skn
+mca@MCA:~/Desktop/linux$ cd skn
+mca@MCA:~/Desktop/linux/skn$ mkdir aa
+mca@MCA:~/Desktop/linux/skn$ cd aa
+mca@MCA:~/Desktop/linux/skn/aa$ mkdir bb
+mca@MCA:~/Desktop/linux/skn/aa$ cd bb
+mca@MCA:~/Desktop/linux/skn/aa/bb$ mkdir cc
+mca@MCA:~/Desktop/linux/skn/aa/bb$ cd cc
+mca@MCA:~/Desktop/linux/skn/aa/bb/cc$ cd ..
+mca@MCA:~/Desktop/linux/skn/aa/bb$ cd -
+/home/mca/Desktop/linux/skn/aa/bb/cc
+mca@MCA:~/Desktop/linux/skn/aa/bb/cc$ cd ~
+mca@MCA:~$ cd skn/aa/bb/cc
+bash: cd: skn/aa/bb/cc: No such file or directory
+mca@MCA:~$ cd Desktop
+mca@MCA:~/Desktop$ cd linux
+mca@MCA:~/Desktop/linux$ cd kst
+bash: cd: kst: No such file or directory
+mca@MCA:~/Desktop/linux$ cd skm
+mca@MCA:~/Desktop/linux/skm$ mkdir abc
+mca@MCA:~/Desktop/linux/skm$ mkdir xyz xxx yyy
+mca@MCA:~/Desktop/linux/skm$ mkdir -p aaa/zzz
+mca@MCA:~/Desktop/linux/skm$ ls
+aaa  abc  xxx  xyz  yyy
+mca@MCA:~/Desktop/linux/skm$ find /Desktop/linux -name file1.txt
+find: ‘/Desktop/linux’: No such file or directory
+mca@MCA:~/Desktop/linux/skm$ find /home/user -name file1.txt
+find: ‘/home/user’: No such file or directory
+mca@MCA:~/Desktop/linux/skm$ find /home/Desktop -linux file1.txt
+find: unknown predicate `-linux'
+mca@MCA:~/Desktop/linux/skm$ ls
+aaa  abc  xxx  xyz  yyy
+mca@MCA:~/Desktop/linux/skm$ ls -l
+total 20
+drwxrwxr-x 3 mca mca 4096 Mar  2 12:05 aaa
+drwxrwxr-x 2 mca mca 4096 Mar  2 12:04 abc
+drwxrwxr-x 2 mca mca 4096 Mar  2 12:04 xxx
+drwxrwxr-x 2 mca mca 4096 Mar  2 12:04 xyz
+drwxrwxr-x 2 mca mca 4096 Mar  2 12:04 yyy
+mca@MCA:~/Desktop/linux/skm$ find aaa -type d
+aaa
+aaa/zzz
+mca@MCA:~/Desktop/linux/skm$ cp file1.txt file2.txt
+cp: cannot stat 'file1.txt': No such file or directory
+mca@MCA:~/Desktop/linux/skm$ cd ..
+mca@MCA:~/Desktop/linux$ cp file1.txt file2.txt
+mca@MCA:~/Desktop/linux$ cp file1.txt
+cp: missing destination file operand after 'file1.txt'
+Try 'cp --help' for more information.
+mca@MCA:~/Desktop/linux$ 
+
+
